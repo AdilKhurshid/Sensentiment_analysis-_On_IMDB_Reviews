@@ -10,7 +10,7 @@
 IMDb, is one of the largest databases for films, tv-shows, and similar content, people provide their valuable opinion on them every year. These reviews eventually play a huge role in the viewer's community. However, these reviews can sometime contain spoilers, and the user also marks them considering their functionality.
 
 
-###Content
+### Content
 
 This dataset contains six json files. The original JSON files can be found in https://www.kaggle.com/ebiswas/imdb-review-dataset
 
@@ -20,7 +20,7 @@ This dataset contains six json files. The original JSON files can be found in ht
 * Users = 1, 699, 310
 * Spoilers = 1, 186, 611
 
-###Inspiration
+### Inspiration
 
 Natural Language Processing & Sentiment Analysis
 What's in a review? Is it positive or negative? IMDb reviews contain a lot of metadata that can be mined and used to infer meaning, business attributes, and sentiment.
@@ -49,7 +49,7 @@ The library requirements specific to some methods are:
 * `keras` with `TensorFlow` backend for  MLP
 
 
-##Steps
+## Steps
 
 
 ### To Run code with PySpark
@@ -74,7 +74,7 @@ Dataset download:
 * Transfer data set in to HDFS file system 
 `hadoop fs -put imdb-review-dataset/*.json /dis_materials`
 
-* In final step just run the notebook
+* In final step just run jupyter notebook
 run the Project_DAT500.ipynb notebook 
 
 
@@ -92,7 +92,10 @@ Run `map_reduce_bow.py` on the output CSV file from the preprocessing section. T
 
 
 
-##Conclusion
+## Conclusion
+
+In this project we evaluated different approaches to the problem of sentiment analysis in Hadoop.The first approach . TextBlob sentiment polarity method is fast and has acceptable accuracy although it is not enough for a real-world usage as it is not very effective in identifying sentiments. Second approach is Unsupervised analysis using Vader model which gave very good accuracy however this improved accuracy is traded off by performance in the processing time. Third approach
+used is ML approach for Classification model using Logistic regression where this approach was done in three ways using Hashing TF-IDF, Count vectorisation and N-Grams.Logistic regression using N-Grams had a longer processing time compared to Hashing TF-IDF and Count Vectorization but with a minimal difference in the accuracy of the prediction. We can conclude that performance in terms of processing of the lexicon based approaches were better compared to the Logistic regression approaches where in Vader gave a very good accuracy for the prediction compared to the accuracy of the TextBlob.
 
 
 
