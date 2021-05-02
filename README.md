@@ -1,4 +1,4 @@
-# Sentiment_analysis_On_IMDB_Reviews
+# Sentiment Analysis On IMDB Reviews
  
 ### Supervised by Tomasz Wiktorski
 #### Project in Computer Science (DAT500), IDE, UiS 2021 
