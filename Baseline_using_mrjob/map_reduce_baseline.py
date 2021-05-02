@@ -5,7 +5,7 @@ from mrjob.job import MRJob
 from dictionary import positive, negative
 
 
-class MRBow(MRJob):
+class MRBaseline(MRJob):
 
     def mapper(self, _, line):
         line = line.replace('null', '')
@@ -27,7 +27,7 @@ class MRBow(MRJob):
 
 if __name__ == '__main__':
     start_time = datetime.now()
-    MRBow.run()
+    MRBaseline.run()
     end_time = datetime.now()
     elapsed_time = end_time - start_time
     print("Total Executing Time : ", elapsed_time)

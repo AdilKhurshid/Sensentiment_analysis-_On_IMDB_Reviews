@@ -94,7 +94,7 @@ Run `map_reduce_bow.py` on the output CSV file from the preprocessing section. T
 
 ## Conclusion
 
-In this project we evaluated different approaches to the problem of sentiment analysis in Hadoop.The first approach . TextBlob sentiment polarity method is fast and has acceptable accuracy although it is not enough for a real-world usage as it is not very effective in identifying sentiments. Second approach is Unsupervised analysis using Vader model which gave very good accuracy however this improved accuracy is traded off by performance in the processing time. Third approach
+In this project we evaluated different approaches to the problem of sentiment analysis in Hadoop.The first approach. TextBlob sentiment polarity method is fast and has acceptable accuracy although it is not enough for a real-world usage as it is not very effective in identifying sentiments. Second approach is Unsupervised analysis using Vader model which gave very good accuracy however this improved accuracy is traded off by performance in the processing time. Third approach
 used is ML approach for Classification model using Logistic regression where this approach was done in three ways using Hashing TF-IDF, Count vectorisation and N-Grams.Logistic regression using N-Grams had a longer processing time compared to Hashing TF-IDF and Count Vectorization but with a minimal difference in the accuracy of the prediction. We can conclude that performance in terms of processing of the lexicon based approaches were better compared to the Logistic regression approaches where in Vader gave a very good accuracy for the prediction compared to the accuracy of the TextBlob.
 
 
